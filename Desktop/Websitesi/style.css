@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Poppins:wght@300;400;600&family=Roboto:wght@100&display=swap');
+
+*{
+    margin: 0;
+    padding:0 ;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-image: url("bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+/*Container start*/
+.container{
+    width: 80%;
+    margin: auto;
+}
+/*Container end*/
+
+/*header start*/
+
+header{
+    height: 10rem;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.06);
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+header nav .logo a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font: 2rem;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    column-gap: 3rem;
+}
+
+nav .menu{
+    display: flex;
+    align-items: center;
+    column-gap: 4.8rem;
+}
+
+nav .menu ul a{
+    color: #fff;
+    text-decoration: none;
+}
+
+nav .menu ul a:hover{
+    color: #0ba2c0;
+    transition: color .25s ease;
+}
+
+nav .menu .menu-button{
+    color: #0ba2c0;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.08);
+    padding: 1.2rem 2.4rem;
+    border-radius: 5.6rem;
+    transition: all .25s ease;
+}
+
+nav .menu .menu-button:hover{
+    background-color: #0ba2c0;
+    color: #fff;
+}
+/*header end*/
+
+/* section start */
+.content{
+    color: #fff;
+    height: calc(100vh - 10rem);
+    padding-top: 15rem ;
+}
+
+.content h1{
+    font-size: 6rem;
+    text-align: center;
+}
+
+.content p{
+    font-size: 2.4rem;
+    text-align: center;
+    margin-top: 3.2rem;
+}
+
+.content .links{
+    display: flex;
+    justify-content: center;
+    margin-top: 4.8rem;
+    column-gap: 1em;
+}
+
+.content .links a{
+    background-color: #fff;
+    padding: 2rem;
+    width: 28rem;
+    color: #000;
+    text-align: center;
+    font-size: 1.8rem;
+    text-decoration: none;
+    border-radius: 3.5em;
+    transition: all .25s ease-in; 
+}
+.content .links a:hover{
+    background-color: #0ba2c0;
+    color: #fff;
+}
+
+/* section end */
+
+/* responsive start */
+    @media(max-width:576px){
+        .container{
+            width: 100%;
+            padding: 0 1.2rem;
+        }
+
+        .menu ul{
+            column-gap: 2rem;
+        }
+        
+        .menu .menu-button{
+            display: none;
+        }
+
+        .content{
+            padding-top:5rem ;
+        }
+
+        .content h1{
+            font-size: 3.6rem; 
+        }
+
+        .content p{
+            font-size: 1em;
+        }
+
+        .content .links{
+            flex-direction: column;
+            align-items: center;
+            row-gap: 1rem;
+        }
+
+        .content .links a{
+            padding: 1.4rem;
+            width: 90%;
+        }
+    }
+/* responsive end */
